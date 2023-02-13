@@ -1,1 +1,1 @@
-# SeniorDesginMobileApp
+# SeniorDesignMobileApp
