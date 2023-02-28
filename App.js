@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {SafeAreaView, StyleSheet } from 'react-native';
+import Navigation from './src/navigation';
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>You're now accessing the mobile app for the F.A.R.M. (Stay tuned for updates!)</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.root}>
+      <Navigation />
+    </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  container: {
+  root: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#3d3d3d'
   },
 });
+
+export default App;
