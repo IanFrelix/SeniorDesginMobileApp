@@ -1,1 +1,12 @@
-<h1> You are looking at the login screen</h1>
+import React from 'react'
+import { View, Text } from 'react-native'
+
+function loginScreen() {
+  return (
+    <View>
+        <Text>Login Screen</Text>
+    </View>
+  )
+}
+
+export default loginScreen
