@@ -1,1 +1,12 @@
-<h1> You are looking at the register screen</h1>
+import React from 'react'
+import { View, Text } from 'react-native'
+
+function registerScreen() {
+  return (
+    <View>
+        <Text>This is the register screen</Text>
+    </View>
+  )
+}
+
+export default registerScreen

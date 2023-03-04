@@ -1,1 +1,12 @@
-<h1> You are looking at the monitor screen</h1>
+import React from 'react'
+import { View, Text } from 'react-native'
+
+function monitorScreen() {
+  return (
+    <View>
+        <Text>This is the monitor screen</Text>
+    </View>
+  )
+}
+
+export default monitorScreen

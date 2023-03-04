@@ -1,1 +1,1 @@
-export { default } from './commandScreen';
+export { default } from './commandsScreen';

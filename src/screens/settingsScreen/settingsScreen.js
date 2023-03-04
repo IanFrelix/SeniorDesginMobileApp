@@ -1,1 +1,12 @@
-<h1> You are looking at the settings screen</h1>
+import React from 'react'
+import { View, Text } from 'react-native'
+
+function settingsScreen() {
+  return (
+    <View>
+        <Text>This is the settings screen</Text>
+    </View>
+  )
+}
+
+export default settingsScreen

@@ -1,1 +1,12 @@
-<h1> You are looking at the command screen</h1>
+import React from 'react'
+import { View, Text } from 'react-native'
+
+function commandScreen() {
+  return (
+    <View>
+        <Text>This is the command screen</Text>
+    </View>
+  )
+}
+
+export default commandScreen
