@@ -1,12 +1,27 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native'
+import SideLogo1 from '../../../assets/ImagesForApp/grassImage.png'
+import SideLogo2 from '../../../assets/ImagesForApp/grassImageFlipped.png'
 
 const CustomHeader = () => {
     return (
-        <View>
+        <View style={styles.header}>
+
+            <Image 
+                source={SideLogo1} 
+                style={[styles.logo, styles.rootLeft]} 
+                resizeMode="contain"
+            />
+
             <Text style={styles.text}>
-                TuneTable23 
+                F.A.R.M. 
             </Text>
+            
+            <Image 
+                source={SideLogo2} 
+                style={[styles.logo, styles.rootRight]} 
+                resizeMode="contain"
+            />
         </View>
     );
 };
@@ -14,10 +29,31 @@ const CustomHeader = () => {
 const styles = StyleSheet.create({
     text: {
         fontweight: 'bold',
-        fontSize: 22,
-        textAlign: 'center',
-        marginVertical: 10,
+        fontSize: 30,
+        //textAlign: 'center',
+        padding: 30,
     },
+
+    header: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+      },
+    
+      rootRight: {
+        alignSelf: 'flex-end',
+        padding: 20
+      },
+    
+      //Doesn't do anything
+      rootLeft: {
+        alignSelf: 'flex-start',
+        padding: 20
+    },
+    
+      logo: {
+        maxWidth: 100,
+        maxHeight: 100,
+      },
     
 });
 
