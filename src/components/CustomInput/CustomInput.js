@@ -19,13 +19,13 @@ const CustomInput = ({value, setValue, placeholder, secureTextEntry}) => {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: '#4F7A9E',
-        width: '100%',
+        width: '50%',
         borderColor: '#C33C54',
         borderWidth: 1,
         borderRadius: 5,
-
         paddingHorizontal: 10,
         marginVertical: 10,
+        alignItems: 'center', //Aligns the inner text to be center
     },
     input: {
         
