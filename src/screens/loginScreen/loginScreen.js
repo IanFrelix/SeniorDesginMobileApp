@@ -12,12 +12,12 @@ function loginScreen() {
   const navigation = useNavigation();
 
   return (
-    <ScrollView showsVerticalScrollIndicator={false} style={styles.base}>
+    <ScrollView showsVerticalScrollIndicator={false} style={[styles.base]}>
         <View>
           <CustomHeader />
         </View>
 
-        <View style={{alignItems: 'center'}}>
+        <View style={[ styles.loginView, styles.loginBorder ]}>
           <CustomInput />
           <CustomInput />
         </View>
@@ -28,8 +28,23 @@ function loginScreen() {
 const styles = StyleSheet.create({
 
   base: {
-    backgroundColor: '#3d3d3d'
+    backgroundColor: '#96A49F'
   },
+
+  loginView: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+
+  },
+
+  loginBorder: {
+    backgroundColor: "#36403D",
+    width: '70%',
+    height: 500,
+    alignSelf: 'center',
+    justifyContent: 'center'
+  }
 });
 
 export default loginScreen

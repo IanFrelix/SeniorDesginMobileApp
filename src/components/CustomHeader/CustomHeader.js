@@ -5,7 +5,7 @@ import SideLogo2 from '../../../assets/ImagesForApp/grassImageFlipped.png'
 
 const CustomHeader = () => {
     return (
-        <View style={styles.header}>
+        <View style={[styles.header, styles.headerColor]}>
 
             <Image 
                 source={SideLogo1} 
@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         //textAlign: 'center',
         padding: 30,
+        postion: "relative"
     },
 
     header: {
@@ -39,21 +40,26 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
       },
     
-      rootRight: {
+    rootRight: {
         alignSelf: 'flex-end',
         padding: 20
       },
     
       //Doesn't do anything
-      rootLeft: {
+    rootLeft: {
         alignSelf: 'flex-start',
         padding: 20
     },
     
-      logo: {
+    logo: {
         maxWidth: 100,
         maxHeight: 100,
+        positon: "relative"
       },
+
+    headerColor: {
+        backgroundColor: "#36403D",
+      }
     
 });
 

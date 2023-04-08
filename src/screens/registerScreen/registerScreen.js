@@ -1,12 +1,26 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 function registerScreen() {
   return (
-    <View>
-        <Text>This is the register screen</Text>
-    </View>
-  )
+    <ScrollView showsVerticalScrollIndicator={false} style={styles.base}>
+      <View>
+        <CustomHeader />
+      </View>
+
+      <View style={{ alignItems: 'center' }}>
+        <CustomInput />
+        <CustomInput />
+      </View>
+    </ScrollView>
+  );
 }
+
+const styles = StyleSheet.create({
+
+  base: {
+    backgroundColor: '#3d3d3d'
+  },
+});
 
 export default registerScreen
